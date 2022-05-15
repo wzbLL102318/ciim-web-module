@@ -1,5 +1,5 @@
 {
-  "name": "ccb-modules",
+  "name": "ciim-modules",
   "version": "0.1.0",
   "author": "wzb",
   "private": true,
@@ -56,5 +56,5 @@
     "last 2 versions",
     "not dead"
   ],
-  "license": ""
+  "license": "MIT"
 }

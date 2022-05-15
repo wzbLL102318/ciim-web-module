@@ -7,6 +7,7 @@ const WebpackBar = require('webpackbar')
 
 const name = 'ccb'
 const resolve = (dir) => path.join(__dirname, ".", dir)
+
 let moduleName = (typeof (process.env.PROJECT_NAME) === 'undefined') ? name : process.env.PROJECT_NAME
 
 module.exports = defineConfig(
@@ -41,12 +42,17 @@ module.exports = defineConfig(
       }
 
       // 可为不同子系统模块配置快捷路径
+      // 修改后需要重启服务
       return {
         resolve: {
           // 省略引入文件的扩展名
           extensions: ['.js', '.json', '.vue', '.scss', '.css'],
           alias: {
-            "@": resolve("src")
+            "@": resolve("src"),
+            "@ccbapp": resolve("src/modules/ccbapp"),
+            "@ccbassets": resolve("src/modules/ccbapp/assets"),
+            "@modapp": resolve("src/modules/modapp"),
+            "@modassets": resolve("src/modules/modapp/assets")
           },
           fallback: {
             "path": require.resolve("path-browserify")

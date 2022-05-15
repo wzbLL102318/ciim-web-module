@@ -98,6 +98,6 @@ process.env.VUE_APP_PROJECT_NAME 为服务启动传入的参数
 可为不同子系统设置环境变量VUE_APP_BASE_API_xxx xxx 为子模块名称
 VUE_APP_BASE_API_xxx = '****'
 调用方式为: process.env[`VUE_APP_BASE_API_${process.env.VUE_APP_PROJECT_NAME}`]
-```
 
+```
 cross-env

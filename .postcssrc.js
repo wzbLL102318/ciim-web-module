@@ -3,8 +3,6 @@ module.exports = {
     '@vue/cli-plugin-babel/preset'
   ],
   "plugins": {
-    "postcss-import": {},
-    "postcss-url": {},
     "autoprefixer": {}
   }
 }
