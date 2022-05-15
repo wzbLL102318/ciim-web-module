@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo"
-         src="../assets/logo.png">
+         src="@assets/logo.png">
     <HelloWorld msg="这是 mod 子模块" />
   </div>
 </template>

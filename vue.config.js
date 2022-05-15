@@ -49,6 +49,7 @@ module.exports = defineConfig(
           extensions: ['.js', '.json', '.vue', '.scss', '.css'],
           alias: {
             "@": resolve("src"),
+            "@assets": resolve("src/assets"),
             "@ccbapp": resolve("src/modules/ccbapp"),
             "@ccbassets": resolve("src/modules/ccbapp/assets"),
             "@modapp": resolve("src/modules/modapp"),

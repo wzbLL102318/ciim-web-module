@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo"
-         src="@ccbassets/logo.png">
+         src="@assets/logo.png">
     <HelloWorld msg="这是CCB 子模块" />
   </div>
 </template>
